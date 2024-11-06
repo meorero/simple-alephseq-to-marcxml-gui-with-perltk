@@ -29,3 +29,14 @@ This project is a Perl-based GUI application for converting files between differ
 2. **Install Required Modules**:
    ```sh
    cpan install Tk Tk::FileSelect Win32::GUI File::Slurp PAR::Packer
+
+# Creating executable exe for Windows
+
+I created in Windows 10 as follows - in CMD:
+
+```sh
+pp -M Tk -M Tk::FileSelect -M Win32::GUI -M File::Slurp -o  aaa_pl_mrc_seq_004.exe aaa_pl_mrc_seq_004.pl
+```
+.
+
+
