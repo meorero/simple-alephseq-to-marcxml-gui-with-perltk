@@ -46,7 +46,7 @@ These modules will enable you to use the catmandu convert commands in your scrip
 2. **Install Required Modules**:
    ```sh
    cpan install Tk Tk::FileSelect Win32::GUI File::Slurp PAR::Packer
-```
+
    .....
 
 # Creating executable exe for Windows
