@@ -23,17 +23,19 @@ This project is a Perl-based GUI application for converting files between differ
   - `File::Slurp`
   - Catmandu - This uses catmandu like this: catmandu convert MARC --type XML to MARC --type ALEPHSEQ < BIBLIOGRAPHIC_65311492130002791_65311492110002791_1.xml > BIBLIOGRAPHIC_65311492130002791_65311492110002791_1.sav
   - To perform the file conversions specified in the program - I am using Catmandu. It needs the following Catmandu modules:
-```Catmandu``` (The core module for Catmandu)
+  - Catmandu (The core module for Catmandu)
 ```Catmandu::MARC``` (For handling MARC records, including conversion between MARC formats)
 ```Catmandu::XML``` (For handling XML files)
 
 You can install these modules using cpan or cpanm. Here are the commands to install them:
 
 ```cpan install Catmandu Catmandu::MARC Catmandu::XML
+```
 
 Or, if you are using cpanm:
 
 ```cpanm Catmandu Catmandu::MARC Catmandu::XML
+```
 
 These modules will enable you to use the catmandu convert commands in your script to convert between XML, MARC, and AlephSEQ formats. 
 
