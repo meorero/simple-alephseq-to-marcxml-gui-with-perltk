@@ -53,9 +53,14 @@ These modules will enable you to use the catmandu convert commands in your scrip
 
 I created in Windows 10 as follows - in CMD:
 
-```sh
+```cmd
 pp -M Tk -M Tk::FileSelect -M Win32::GUI -M File::Slurp -o  aaa_pl_mrc_seq_004.exe aaa_pl_mrc_seq_004.pl
 ```
 .
 
+Longer Windows CMD: 
 
+```cmd
+pp -M Tk -M Tk::FileSelect -M Win32::GUI -M File::Slurp  -M Catmandu::Importer::MARC::ALEPHSEQ  -M Catmandu::Exporter::MARC::MARCMaker  -M Catmandu::Importer::MARC::XML  -M Catmandu::Exporter::MARC::ALEPHSEQ  -M Catmandu::Exporter::MARC::XML -o  aaa_pl_mrc_seq_004.exe aaa_pl_mrc_seq_004.pl 
+
+...
